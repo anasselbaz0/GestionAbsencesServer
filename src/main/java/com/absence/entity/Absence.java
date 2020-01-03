@@ -62,29 +62,6 @@ public class Absence {
 		this.isJustified = isJustified;
 	}
 
-	public Module getModule() {
-		return module;
-	}
-
-	public void setModule(Module module) {
-		this.module = module;
-	}
-
-	public Etudiant getEtudiant() {
-		return etudiant;
-	}
-
-	public void setEtudiant(Etudiant etudiant) {
-		this.etudiant = etudiant;
-	}
-
-	public Professeur getProfesseur() {
-		return professeur;
-	}
-
-	public void setProfesseur(Professeur professeur) {
-		this.professeur = professeur;
-	}
 	
 	
 	

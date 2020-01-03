@@ -28,7 +28,6 @@ public class UserController {
 
 	@PostMapping("/login")
 	public User loginUser(@Valid @RequestBody User user) {
-		System.out.println(1);
 		return userService.loginUser(user);
 	}
 	

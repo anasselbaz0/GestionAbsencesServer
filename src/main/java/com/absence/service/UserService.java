@@ -18,8 +18,9 @@ public class UserService {
 	}
 	
 	public User loginUser(User user) {
-		System.out.println(2);
+		System.out.println(user);
 		User dbUser = userRepository.findByUsername(user.getUsername());
+		System.out.println(dbUser);
 		System.out.println(3);
 		if (user.equals(dbUser)) {
 			System.out.println(4);

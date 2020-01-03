@@ -30,6 +30,10 @@ public class EtudiantService {
 		etudiantRepository.deleteById(id);
 	}
 
+	public Etudiant getEtudiantByUsername(String u) {
+		return etudiantRepository.findByUsername(u);
+	}
+
 	
 
 	

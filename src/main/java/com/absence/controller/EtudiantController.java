@@ -36,6 +36,13 @@ public class EtudiantController {
 		return e;
 	}
 	
+	@GetMapping("/etudiants/username/{username}")
+	public Etudiant getEtudiantByUsername(@PathVariable("username") String u) {
+		System.out.println(u);
+		Etudiant e =  etudiantService.getEtudiantByUsername(u);
+		return e;
+	}
+	
 	@PostMapping("/etudiants/add")
 	public Etudiant addOrEditEtudiant(@Valid @RequestBody Etudiant e) {
 		e.setPassword(e.getPassword());
