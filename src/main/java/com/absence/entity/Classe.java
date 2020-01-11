@@ -28,6 +28,12 @@ public class Classe implements Serializable {
 	@OneToMany(mappedBy = "classe")
 	private Collection<Etudiant> etudiants;
 	
+	@Override
+	public String toString() {
+		return "Classe [id=" + id + ", cycle=" + cycle + ", annee=" + annee + ", filiere=" + filiere + ", groupe="
+				+ groupe + ", etudiants=" + etudiants + "]";
+	}
+
 	public Classe() {
 		super();
 		etudiants = new ArrayList<>();

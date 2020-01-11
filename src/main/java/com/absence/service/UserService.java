@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.absence.entity.User;
 import com.absence.repository.UserRepository;
 
@@ -16,17 +17,19 @@ public class UserService {
 	public User getUserByUsername(String username) {
 		return userRepository.findByUsername(username);
 	}
-	
+
 	public User loginUser(User user) {
-		System.out.println(user);
+		
+		
 		User dbUser = userRepository.findByUsername(user.getUsername());
+		System.out.println(user);
 		System.out.println(dbUser);
-		System.out.println(3);
+
 		if (user.equals(dbUser)) {
-			System.out.println(4);
+			
 			return dbUser;
 		}
-		System.out.println(5);
+		
 		return null;
 	}
 	

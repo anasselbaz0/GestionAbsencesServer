@@ -116,7 +116,7 @@ public class Professeur implements Serializable {
 
 
 	public User toUser() {
-		return new User(this.getUsername(),this.getPassword(),Role.PROF);
+		return new User(this.getUsername(),this.getPassword(),Role.PROFESSEUR);
 	}
 	
 }
